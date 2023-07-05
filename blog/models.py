@@ -10,12 +10,13 @@ class Post(models.Model):
     date = models.DateTimeField(auto_now=True)
     image_name = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100, unique=True)
+    author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True, related_name='posts')
 
 
 class Author(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
-    email = models.EmailField()
+    email_address = models.EmailField()
 
     def __str__(self):
         return f'{self.first_name} {self.last_name}'
