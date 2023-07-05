@@ -11,6 +11,7 @@ class Post(models.Model):
     image_name = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100, unique=True)
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True, related_name='posts')
+    tags = models.ManyToManyField('Tag', related_name='posts')
 
 
 class Author(models.Model):
