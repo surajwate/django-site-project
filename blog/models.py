@@ -8,7 +8,7 @@ class Post(models.Model):
     excerpt = models.CharField(max_length=200, blank=True)
     content = models.TextField(validators=[MinLengthValidator(10)])
     date = models.DateTimeField(auto_now=True)
-    image_name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to="posts", null=True)
     slug = models.SlugField(max_length=100, unique=True)
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True, related_name='posts')
     tags = models.ManyToManyField('Tag', related_name='posts')
