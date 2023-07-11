@@ -36,3 +36,4 @@
  - Adding an Imagefield to the Post Model
  - Serving Uploaded Files
  - Converting Views to Class Based
+ - Adding a Comment Model
