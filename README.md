@@ -41,3 +41,4 @@
  - Styling the Comment Form
  - Handling Comment Form Submission
  - Comment Form Validation Styles
+ - Outputting Comments
