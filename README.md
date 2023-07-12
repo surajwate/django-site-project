@@ -38,3 +38,4 @@
  - Converting Views to Class Based
  - Adding a Comment Model
  - Adding a Comment Form
+ - Styling the Comment Form
