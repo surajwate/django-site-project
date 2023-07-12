@@ -46,3 +46,4 @@
  - Read Later Starting Setup
  - Managing Read Later via Session
  - Read Later Page & Styling
+ - Finishing the Read Later Feature
