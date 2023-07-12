@@ -40,3 +40,4 @@
  - Adding a Comment Form
  - Styling the Comment Form
  - Handling Comment Form Submission
+ - Comment Form Validation Styles
