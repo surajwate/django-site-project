@@ -13,6 +13,9 @@ class Post(models.Model):
     author = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True, related_name='posts')
     tags = models.ManyToManyField('Tag', related_name='posts')
 
+    def __str__(self) -> str:
+        return self.title
+
 
 class Author(models.Model):
     first_name = models.CharField(max_length=30)
