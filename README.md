@@ -43,3 +43,4 @@
  - Comment Form Validation Styles
  - Outputting Comments
  - Comment Admin
+ - Read Later Starting Setup
