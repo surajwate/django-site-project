@@ -44,3 +44,4 @@
  - Outputting Comments
  - Comment Admin
  - Read Later Starting Setup
+ - Managing Read Later via Session
